@@ -1,0 +1,339 @@
+*{
+    margin: 0px;
+}
+html { 
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #ffe2ef;
+    text-align: center;
+    position: relative;
+}
+#deco1 {
+    position: fixed;
+    left: 0px;
+    z-index: 10;
+}
+#deco2 {
+    transform: rotate(180deg);
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+}
+
+.hd {
+    text-align: right;
+    font-size: 13px;
+    padding: 30px;
+}
+.hd a:first-child:after {
+    margin: 0 15px;
+    content: '|';
+}
+.pcBlock {
+    margin-top: 60px;
+    font-size: 60px;
+}
+.MainBlock_title {
+    margin-top: 40px;
+    width: 50vw;
+}
+.theme {
+    cursor: pointer;
+    margin: 30px auto;
+    width: 504px;
+}
+.theme_text {
+    background-color: #3870cf;
+    color:#f6f9fd;
+    font-weight: 100;
+    padding: 5px;
+}
+.theme_text::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position:relative;
+    background-image: url(../img/plus.png);
+    background-size: 100%;
+    margin-left: 10px;
+    top:3px;
+}
+.theme_text:hover {
+    background-color: #211263;
+    transition: background-color .3s ease;
+}
+.theme_word {
+    background-color: #e9f13d;
+    color: #3870cf;
+    font-weight:lighter;
+    padding: 5px;
+}
+.title_img img{
+    width: 80%;
+}
+.mainBlock__text {
+    color:#211263;
+    line-height: 1.875;
+    font-size: 1rem;
+}
+.mainBlock__reserve {
+    border: solid 2px #211263;
+    border-radius: 6px;
+    max-width: 640px;
+    margin: 30px auto;
+}
+.mainBlock__reserve_title {
+    display: inline-block;
+    color: #211263;
+    margin-top: 20px;
+    line-height: 1.875;
+    font-size: 1rem;
+    border-bottom: #211263 1px solid;
+}
+.mainBlock__reserve_span {
+    color: #f25969;
+    line-height: 1.42857;
+    padding: 10px 0px 0px 0px;
+}
+.br {
+    display: none;
+}
+.CHECK__IN {
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    background: #f25969;
+    margin: 10px auto 20px;
+    padding: 12px 60px;
+    border-radius: 40px;
+}
+.CHECK__IN:hover {
+    background-color: #ff001b;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.acd-check{
+    display: none;
+}
+.acd-label{
+    background: #211263;
+    color: #fff;
+    display: block;
+    padding: 14px 18px 10px;
+    margin: 0px auto 0px;
+    text-align: left;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    user-select: none;
+}
+.acd-label:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 26px;
+	height: 26px;
+	background: url(../img/plus_new.png) left center no-repeat;
+	display: inline-block;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.acd-content{
+    opacity: 0;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    margin: 0px auto -200px;
+    transition: .5s;
+    visibility: hidden;
+	background: #53497f;
+    color:#fff;
+    text-align: left;
+}
+.acd-check:checked + .acd-label:after{
+    background: url(../img/minus.png) left center no-repeat;
+}
+.acd-check:checked + .acd-label + .acd-content{
+    margin-bottom: 30px;
+    opacity: 1;
+    padding: 20px;
+    visibility: visible;
+}
+.hidd_ul {
+    padding-left: 20px;
+}
+.resbet {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 11px 17px;
+    margin: 10px;
+    color: #fff;
+    background: #211263;
+}
+.resbet::before {
+    content: '';
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.table::before {
+    background: url(../img/time.png) left center no-repeat;
+    background-size: auto;
+    background-size: 19px 19px;
+    vertical-align: -4px;
+}
+.map::before {
+    background: url(../img/map.png) left center no-repeat;
+    background-size: auto;
+    background-size: 19px 19px;
+    vertical-align: -4px;
+}
+.club::before {
+    background: url(../img/club.png) left center no-repeat;
+    background-size: auto;
+    background-size: 19px 19px;
+    vertical-align: -4px;
+}
+.archive::before {
+    content: '';
+    width: 6px;
+    height: 12px;
+    background: url(../img/play.png) left center no-repeat;
+    background-size: 6px 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.archive:hover::before {
+    background-image: url(../img/play_hover.png);
+}
+.archive {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.42857;
+    padding: 8px 32px;
+    margin: 5px 10px;
+    border: 2px solid #211263;
+    border-radius: 20px;
+    color: #211263;
+    text-decoration: none;
+}
+.archive:hover {
+    transition: all 0.3s ease;
+    background: #346dd2;
+    border-color: #346dd2;
+    color: #ffffff;
+}
+.link {
+    margin: 0px 10px 30px;
+}
+.nav {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 30px;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: #211263;
+}
+.nav_link {
+    border-bottom: solid 2px #211263;
+    margin: 0px 3vw 0px;
+}
+.nav_link:hover {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: #211263;
+    border-bottom:none;
+    transition: all 0.2s ease;
+}
+.nav_link {
+    display: inline-block;
+}
+
+/* レスポンシブコード */
+@media only screen and (max-width:  1100px) {
+    .MainBlock_title {
+        width: 80vw;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .br {
+        display: block;
+    }
+    .br_hd {
+        display: none;
+    }
+    .resbet {
+        margin: 0 0.74627% 10px 0;
+        padding: 8px 6px;
+        letter-spacing: -1px;
+    }
+    .resbet::before {
+        height: 17px;
+        width: 17px;
+        background-size: 17px 17px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .mainBlock__reserve {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #deco1 img {
+        height: 20vw;
+    }
+    #deco2 img {
+        height: 20vw;
+    }
+    .hd {
+        display: none;
+    }
+    .MainBlock_title {
+        margin-top: 120px;
+    }
+    .theme {
+        width: 90%;
+    }
+    .theme_text {
+        width: 100%;
+        font-size: 18px;
+    }
+    .theme_text::after {
+        width: 20px;
+        height: 20px;
+    }
+    .theme_word {
+        width: 100%;
+        font-size: 18px;
+    }
+    .nav_link a {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .theme {
+        width: 90%;
+    }
+    .theme_text {
+        width: 100%;
+        font-size: 14px;
+    }
+    .theme_word {
+        width: 100%;
+        font-size: 14px;
+    }
+}

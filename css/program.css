@@ -1,0 +1,198 @@
+#program{
+    display: inherit;
+    background-color: #d9efff;
+    text-align: center;
+}
+.program{
+    padding-top: 100px;
+    font-size: 54px;
+    color: #211263;
+    font-family: 'Bitter','メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro W3',sans-serif;
+}
+.program span {
+    font-size: 20px;
+    display: block;
+}
+.program_nav {
+    background-color: ivory;
+    max-width: 600px;
+    padding: 10px;
+    margin:30px auto 30px;
+}
+.program_color::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: -5px;
+    margin-right: 8px;
+}
+.p::before {
+    background-color: #ab75c7;
+}
+.r::before {
+    background-color: #f25969;
+}
+.bl::before {
+    background-color: #3196d6;
+}
+.g::before {
+    background-color: #30b5b3;
+}
+.bw::before {
+    background-color: #ef8834;
+}
+.purple {
+    color: #ab75c7;
+}
+.red {
+    color: #f25969;
+}
+.blue {
+    color: #3196d6;
+}
+.green {
+    color: #30b5b3;
+}
+.brown {
+    color: #ef8834;
+}
+
+.purple .program_card_time{
+    background-color: #ab75c7;
+}
+.red .program_card_time{
+    background-color: #f25969;
+}
+.blue .program_card_time{
+    background-color: #3196d6;
+}
+.green .program_card_time{
+    background-color: #30b5b3;
+}
+.brown .program_card_time{
+    background-color: #ef8834;
+}
+
+.purple .program_place{
+    background-color: #ab75c7;
+}
+.red .program_place{
+    background-color: #f25969;
+}
+.blue .program_place{
+    background-color: #3196d6;
+}
+.green .program_place{
+    background-color: #30b5b3;
+}
+.brown .program_place{
+    background-color: #ef8834;
+}
+.program_color {
+    display: inline-block;
+}
+.program_content {
+    display: block;
+    list-style: none;
+    max-width: 992px;
+    width: 100%;
+    margin: auto;
+}
+.program_card {
+    width: 23%;
+    margin: 1.0%;
+    float:left;
+    height: 450px;
+}
+.program_card_time {
+    background-color: #ab75c7;
+    text-align: right;
+    color:#fff;
+    letter-spacing:-1px;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 10px 10px 0px 0px;
+    float: right;
+}
+.program_img {
+    width: 100%;
+}
+.program_place {
+    background: #ab75c7;
+    margin-top: -8px;
+    padding:8px 15px;
+    font-size: 14px;
+    color: #fff;
+    min-height: 60px;
+    text-align: left;
+}
+.program_place span {
+    display: block;
+}
+.program_more {
+    clear:both;
+}
+.program_time {
+    background-color: #fff;
+}
+.program_explanation {
+    font-size: 13px;
+    padding-top: 10px;
+    color: #000;
+    text-align: left;
+}
+.program_more {
+    padding-bottom: 20px;
+}
+.pdf_link {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.42857;
+    padding: 15px 0px;
+    width: 296px;
+    margin: 0 10px 60px;
+    border: 2px solid #211263;
+    border-radius: 90px;
+    color: #211263;
+    text-decoration: none;
+    font-size: 24px;
+}
+.pdf_link:hover {
+    background-color: #346dd2;
+    border-color: #346dd2;
+    color: #fff;
+    transition: background-color .3s ease;
+}
+.time_table::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icn_time.png);
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: -13px;
+}
+.time_table:hover::before {
+    background-image: url(../img/icn_time_hover.png);
+    transition: background-color .3s ease;
+}
+
+/* レスポンシブコード */
+
+@media only screen and (max-width: 992px) {
+    .program_card {
+        width: 31.3%;
+    }
+    .program_content {
+        width: 95%;
+        padding: auto;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .program_card {
+        width: 48%;
+        height: auto;
+    }
+}

@@ -1,0 +1,62 @@
+#ftBlock {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 60px;
+}
+.ftBlock {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    z-index: 10;
+}
+.ftBlock__left {
+    float: left;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.ftBlock__right__list__link:first-child::after {
+    content: '|';
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.ftBlock__inner {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.ftBlock__left__logo {
+    display: block;
+    float: left;
+}
+.ftBlock__left__address {
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.83333;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+.ftBlock__left__address {
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.83333;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+.ftBlock__right {
+    float: right;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.ftBlock__right__list {
+    text-align: right;
+    margin: 10px 0 7px 0;
+}

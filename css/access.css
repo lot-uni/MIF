@@ -1,0 +1,22 @@
+#access {
+    display: block;
+    background-color: #fff;
+    text-align: center;
+}
+.access {
+    font-size: 54px;
+    color: #211263;
+    margin:100px auto 200px;
+    font-family: 'Bitter','メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro W3',sans-serif;
+    text-align: center;
+}
+.access span {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.access_a {
+    text-decoration: underline;
+    font-size: 20px;
+}

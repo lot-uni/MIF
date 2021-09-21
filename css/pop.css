@@ -85,12 +85,14 @@ transition: opacity 0.5s;
     }
     .txt {
         padding-bottom: 10px;
+        font-size: 13px;
     }
     .ttl {
         padding-bottom: 10px;
     }
     #pop_title {
         font-size: 1rem;
+        padding-right: 20px;
     }
     .modal__cont--list:nth-child(-n+2){
         border-right: none;
